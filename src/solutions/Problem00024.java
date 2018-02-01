@@ -1,11 +1,12 @@
 package solutions;
 
 import java.util.ArrayList;
+import java.util.TreeSet;
 
 public class Problem00024 {
     public static void main(String[] args) {
         ArrayList<Long> allDigits = new ArrayList<>();
-        ArrayList<Long> permutations = new ArrayList<>();
+        TreeSet<Long> permutations = new TreeSet<>();
         for(long i = 0; i < 10; i++) allDigits.add(i);
         int startLong = 0;
         getPermutations(startLong, permutations, allDigits);
@@ -13,12 +14,12 @@ public class Problem00024 {
 //        permutations.forEach((i) -> {
 //            System.out.println(i.toString());
 //        });
-        
-        System.out.println(permutations.get(1_000_000 - 1));
+
+        System.out.println(permutations.toArray()[1_000_000-1]);
         
     }
     
-    public static void getPermutations(long startLong, ArrayList<Long> listOfPermutations, ArrayList<Long> digits){
+    public static void getPermutations(long startLong, TreeSet<Long> listOfPermutations, ArrayList<Long> digits){
         if(digits.size() > 0){
             long gpInt = startLong*10;
             for(int i = 0; i < digits.size(); i++){
