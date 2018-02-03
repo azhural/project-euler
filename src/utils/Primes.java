@@ -8,7 +8,7 @@ import java.util.List;
 public class Primes {
     private final BitSet filter;
     private final int size;
-    private List<Integer> primes;
+    private final List<Integer> primes;
     
     public Primes(int size){
         this.size = size;
@@ -26,6 +26,7 @@ public class Primes {
             }
         }
         
+        primes = new ArrayList<>();
         for(int i = 0; i < this.size; i++){
             if(filter.get(i)){
                 primes.add(i);
