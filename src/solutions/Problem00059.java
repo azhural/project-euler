@@ -32,7 +32,7 @@ public class Problem00059 {
                         } catch (IndexOutOfBoundsException e) {
                         }
                     }
-                    if (toTest.contains("and") && toTest.contains("the") && toTest.contains("in") && toTest.contains("was")) {
+                    if (toTest.contains("and") && toTest.contains("the") && toTest.contains("be") && toTest.contains("to") && toTest.contains("of")) {
                         possibleTexts.add(toTest);
                     }
                 }
