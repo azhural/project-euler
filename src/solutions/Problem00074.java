@@ -4,7 +4,7 @@ import java.util.BitSet;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class Problem00072 {
+public class Problem00074 {
     public static void main(String[] args) {
         final int LIMIT = 1_000_000;
         BitSet bs = new BitSet(LIMIT);
